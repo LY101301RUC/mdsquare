@@ -1,0 +1,13 @@
+{
+  "name": "markdown-dev-preview-assets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vendor:preview": "node script/vendor-preview-assets.mjs",
+    "verify:preview": "node script/verify_preview_fixtures.mjs"
+  },
+  "dependencies": {
+    "linkedom": "0.18.12",
+    "markdown-it": "14.3.0"
+  }
+}

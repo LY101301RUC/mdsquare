@@ -1,0 +1,13 @@
+.DS_Store
+.codex/
+.superpowers/
+.build/
+.swiftpm/
+dist/
+docs/superpowers/
+MdSquare.app
+node_modules/
+tmp/
+.env
+.env.*
+!.env.example

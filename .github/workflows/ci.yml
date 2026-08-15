@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: macos-15
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Install locked Node dependencies
+        run: npm ci
+
+      - name: Audit Node dependencies
+        run: npm audit --package-lock-only --audit-level=moderate
+
+      - name: Verify vendored Markdown renderer
+        run: |
+          npm run vendor:preview
+          git diff --exit-code -- Sources/MarkdownDev/Resources/Preview/vendor/markdown-it.min.js
+
+      - name: Run test suite
+        run: ./script/test.sh
+
+      - name: Enforce preview performance budget
+        run: node script/measure_core_perf.mjs --budget
