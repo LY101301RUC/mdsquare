@@ -7,7 +7,7 @@
     "verify:preview": "node script/verify_preview_fixtures.mjs"
   },
   "dependencies": {
-    "linkedom": "0.18.12",
+    "linkedom": "0.18.13",
     "markdown-it": "14.3.0"
   }
 }
