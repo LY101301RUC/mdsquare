@@ -78,4 +78,4 @@ Markdown 预览使用 `markdown-it`，测试工具使用 `linkedom`。许可文�
 
 ## License
 
-项目许可证尚未选定。在许可证明确之前，本仓库内容不授予复制、修改、分发或再授权许可。第三方组件继续遵循各自许可证。
+除 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 中另有说明的第三方组件外，本项目内容按 [MIT License](LICENSE) 发布。仓库中的应用图标和欢迎页美术素材已确认可以随源码公开分发。
