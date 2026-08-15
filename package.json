@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "linkedom": "0.18.12",
-    "markdown-it": "14.3.0"
+    "markdown-it": "15.0.0"
   }
 }
