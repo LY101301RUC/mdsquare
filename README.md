@@ -28,7 +28,7 @@
 
 - macOS 14 或更高版本
 - Swift 6 工具链
-- Node.js 与 npm（用于预览依赖、fixture 和性能验证）
+- Node.js 20.19 或更高版本与 npm（CI 使用 Node.js 24；用于预览依赖、fixture 和性能验证）
 
 ## 本地构建
 

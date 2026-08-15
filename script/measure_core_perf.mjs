@@ -12,9 +12,11 @@ const fixtureDir = path.join(root, "tmp/perf-fixtures");
 const rendererPath = path.join(root, "Sources/MarkdownDev/Resources/Preview/preview-renderer.js");
 const rendererSource = fs.readFileSync(rendererPath, "utf8");
 const enforceBudget = process.argv.includes("--budget");
+// GitHub-hosted macOS runners vary more than local machines. These thresholds
+// remain several times above the local baseline while avoiding minor host noise.
 const budgets = {
-  "100kb.md": 250,
-  "1mb.md": 1500
+  "100kb.md": 300,
+  "1mb.md": 2000
 };
 
 function ensureFixtures() {

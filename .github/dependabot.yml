@@ -5,6 +5,12 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    ignore:
+      # markdown-it 15 no longer ships dist/markdown-it.min.js. Updating it
+      # requires changing the vendoring pipeline, so major upgrades are manual.
+      - dependency-name: markdown-it
+        update-types:
+          - version-update:semver-major
 
   - package-ecosystem: github-actions
     directory: /

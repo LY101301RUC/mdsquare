@@ -33,7 +33,7 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-## linkedom 0.18.12
+## linkedom 0.18.13
 
 Repository: <https://github.com/WebReflection/linkedom>
 
