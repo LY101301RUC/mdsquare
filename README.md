@@ -9,7 +9,6 @@
   A local-first Markdown editor for macOS.
 </p>
 
-> 当前状态：MVP 源码版本。仓库尚未提供经过开发者签名和 Apple 公证的可下载应用。
 
 ![MdSquare 欢迎页](docs/images/mdsquare-welcome.jpeg)
 
@@ -78,4 +77,4 @@ Markdown 预览使用 `markdown-it`，测试工具使用 `linkedom`。许可文�
 
 ## License
 
-除 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 中另有说明的第三方组件外，本项目内容按 [MIT License](LICENSE) 发布。仓库中的应用图标和欢迎页美术素材已确认可以随源码公开分发。
+MIT.
