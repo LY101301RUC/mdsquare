@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "linkedom": "0.18.13",
-    "markdown-it": "14.3.0"
+    "markdown-it": "14.3.2"
   }
 }
